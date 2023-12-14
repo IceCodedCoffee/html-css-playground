@@ -1,0 +1,13 @@
+div {
+    color: black;
+    /* width: 200px; */
+    height: 150px;
+    border: 1px solid black;
+    background-color: rgb(166, 97, 184);
+}
+
+.div2 {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
