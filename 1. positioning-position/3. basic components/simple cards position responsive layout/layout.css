@@ -1,7 +1,6 @@
 .card-container {
     position: relative;
     
-    max-width: 800px;
     padding: 5px;
 }
 
@@ -9,47 +8,30 @@
     position: absolute;
 }
 
-.card-1 {
-    top: 0; 
-}
-
 .card-2 {
-    top: calc(385px + 2*10px); /*prior cards height + 2x margin*/
+    top: calc(5px + 385px + 2*10px); /*padding container + prior cards height + 2x margin*/
 }
 
 .card-3 {
-    top: calc(2*385px + 4*10px); /*prior cards height + 4x margin*/
+    top: calc(5px + 2*(385px + 2*10px));
 }
 
 @media screen and (min-width: 34em){
-    
-    .card-1 {
-        left: 0; 
-    }
-    
+        
     .card-2 {
         top: unset;
-        left: calc(250px + 2*10px); /*prior cards width + 2x margin*/
+        left: calc(5px + 250px + 2*10px);
     }
     
     .card-3 {
-        top: calc(385px + 2*10px); /*prior cards height + 2x margin*/
+        top: calc(5px + 385px + 2*10px);
     }
 }
 
 @media screen and (min-width: 52em){
-
-    .card-1 {
-        left: 0; 
-    }
-    
-    .card-2 {
-        top: unset;
-        left: calc(250px + 2*10px); /*prior cards width + 2x margin*/
-    }
-    
+      
     .card-3 {
         top: unset;
-        left: calc(2*250px + 4*10px); /*prior cards width + 4x margin*/
+        left: calc(5px + 2*(250px + 2*10px));
     }
 }
