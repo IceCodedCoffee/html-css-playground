@@ -1,0 +1,7 @@
+.sticky {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    background: rgb(74, 179, 109);
+    color:rgb(110, 78, 206)
+}
