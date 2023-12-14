@@ -1,0 +1,7 @@
+.fig-container {
+    float: right;
+}
+
+.fig {
+    float: inherit;
+}

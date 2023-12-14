@@ -1,0 +1,14 @@
+.article {
+    display: flow-root;
+    /* overflow: hidden; */
+    
+    background-color: gray;
+}
+
+.fig {
+    float: left;
+}
+
+h3 {
+    clear: both;
+}
