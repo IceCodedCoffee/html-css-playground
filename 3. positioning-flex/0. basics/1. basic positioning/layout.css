@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+
+@media screen and (min-width: 42em){
+    .flex-container {
+        flex-direction: row;
+
+        align-items: flex-start;
+    }
+
+    .div2 {
+        align-self: flex-end;
+    }    
+}
