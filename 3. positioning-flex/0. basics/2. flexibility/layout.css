@@ -1,22 +1,16 @@
 .flex-container {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row nowrap;
     
-    justify-content: center;
-    align-items: center;
-
     height: 100vh;
 }
 
+div div {
+    width: 200px;
 
-@media screen and (min-width: 42em){
-    .flex-container {
-        flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
 
-        align-items: flex-start;
-    }
-
-    .div2 {
-        align-self: flex-end;
-    }    
+    /* flex: 0 1 auto; */
 }
