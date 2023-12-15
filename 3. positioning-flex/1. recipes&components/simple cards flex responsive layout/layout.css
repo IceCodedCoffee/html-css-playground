@@ -1,16 +1,4 @@
-.card {
-    float: left
-}
-
-@media screen and (min-width: 34em){
-    .card-3 {
-        clear: both;
-    }
-}
-
-@media screen and (min-width: 59em){
-    .card-3 {
-        clear: none;
-        float: left
-    }
+.card-container {
+    display: flex;
+    flex-flow: row nowrap;
 }
