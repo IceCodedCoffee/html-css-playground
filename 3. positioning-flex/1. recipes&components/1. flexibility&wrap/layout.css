@@ -1,0 +1,13 @@
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    
+    align-content: flex-start;
+    height: 100vh;
+}
+
+div div {
+    width: 200px;
+
+    flex-grow: 1;
+}
