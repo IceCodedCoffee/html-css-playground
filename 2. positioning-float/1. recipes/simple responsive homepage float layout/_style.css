@@ -4,6 +4,10 @@ body {
     font-family: Georgia;
 }
 
+.page-wrapper {
+    background-color: #ff3b3f;
+}
+
 .header {
     padding: 1em;
     background-color: #07889b;
