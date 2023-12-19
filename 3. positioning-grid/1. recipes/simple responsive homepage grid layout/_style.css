@@ -1,0 +1,113 @@
+body {
+    background-color: #efefef;
+    color: #1d2731;
+    font-family: Georgia;
+}
+
+.page-wrapper {
+    background-color: #ff3b3f;
+}
+
+.header {
+    padding: 0.5em;
+    background-color: #07889b;
+
+    color: #efefef;
+    text-align: center;
+
+    background-image: url(/assets/images/pexels-pixabay-2150.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-container {
+    padding: 1rem 1rem;
+    background-color: #fff;
+}
+
+.main, aside {
+    padding: 1rem 1rem;
+    background-color: #fff;
+
+    border-bottom: 1px solid #a9a9a9;
+}
+
+.article__img {
+    max-width: 100%;
+
+    margin: 0 2em 0.5em 0;
+}
+
+.aside {
+    border: none;
+}
+
+.aside__img {
+    max-width: 90%;
+}
+
+.footer {
+    padding: 1em;
+    background-color: #a9a9a9;
+    text-align: center;
+}
+
+@media (min-width: 40em) {
+    .header {
+        padding: 1.5em 0 1.5em 2em;
+        text-align: left;
+    }
+
+    .content-container {
+        padding: 1.5rem 0;
+        overflow: auto;
+    }
+
+    .main {
+        float: left;
+        width: 60%;
+        padding: 0 2rem 0 2rem;
+        border: none;
+    }
+
+    .aside {
+        margin: 0 0 0 60%;
+        width: auto;
+        padding: 0 2rem 0 2rem;
+        border-top: none;
+    }
+
+    .aside__img {
+        max-width: 80%;
+        margin: 0 2% 0.5% 0;
+    }
+}
+
+@media (min-width: 64em) {
+    .main {
+        width: 65%;
+    }
+
+    .article__img {
+        float: left;
+        max-width:55%;
+        margin: 0 2% 0.5% 0;
+    }
+
+    .aside__img {
+        max-width: 70%;
+        margin: 0 2% 0.5% 0;
+    }
+}
+
+@media (min-width: 80em) {
+    .article {
+        float: left;
+        width: 45%;
+        padding: 0 2rem 0 0;
+    }
+
+    .row {
+        clear: both;
+    }
+}
