@@ -1,0 +1,13 @@
+div div {
+    width: 200px;
+    height: 150px;
+
+    margin: 0.5em;
+
+    border: 1px solid black;
+    background-color: rgb(166, 97, 184);
+
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
