@@ -23,3 +23,13 @@
 .footer {
     grid-area: 5/1/6/11;
 }
+
+@media (min-width: 40em) {
+    .main {
+        grid-area: 3/1/5/8;
+    }
+
+    .aside {
+        grid-area: 3/8/5/11;
+    }
+}

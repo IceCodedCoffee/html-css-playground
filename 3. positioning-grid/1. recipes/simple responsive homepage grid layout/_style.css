@@ -64,21 +64,16 @@ body {
     }
 
     .main {
-        float: left;
-        width: 60%;
         padding: 0 2rem 0 2rem;
         border: none;
     }
 
     .aside {
-        margin: 0 0 0 60%;
-        width: auto;
         padding: 0 2rem 0 2rem;
         border-top: none;
     }
 
     .aside__img {
-        max-width: 80%;
         margin: 0 2% 0.5% 0;
     }
 }
