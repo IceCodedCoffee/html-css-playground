@@ -33,3 +33,21 @@
         grid-area: 3/8/5/11;
     }
 }
+
+@media (min-width: 64em) {
+    .page-wrapper {
+        grid-template-columns: repeat(3, 5rem) repeat(7, 1fr);
+    }
+
+    .nav {
+        grid-area: 2/1/5/3;
+    }
+
+    .main {
+        grid-area: 2/3/5/8;
+    }
+
+    .aside {
+        grid-area: 2/8/5/11;
+    }
+}
