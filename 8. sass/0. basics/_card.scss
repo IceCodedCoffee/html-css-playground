@@ -1,0 +1,25 @@
+.card {
+    width: 300px;
+
+    padding: 20px;
+    margin: 10px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: yellowgreen;
+
+    color: $color-primary;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__heading {
+    text-align: center;
+}
+
+.card__content {
+    text-align: center;
+    font-size: 0.8rem;
+}
