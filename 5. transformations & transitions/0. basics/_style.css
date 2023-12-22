@@ -1,0 +1,34 @@
+body {
+    padding: 2rem;
+}
+
+.card {
+    transition: all 0.5s ease;
+}
+
+.card-1:hover {
+    transform: scale(1.15) translateY(0.5rem);
+}
+
+.card-2:hover {
+    transform: rotate(15deg);
+}
+
+.card-3:hover {
+    transform: skewY(15deg);
+}
+
+.card-4:hover {
+    transform: scale(1.5) rotate(-720deg);
+    background-color: aqua;
+}
+
+.btn {
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    transform: scale(1.15);
+    background-color: aqua;
+    color: black;
+}
