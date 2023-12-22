@@ -1,0 +1,32 @@
+.img-container {
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.img {
+    display: block;
+}
+
+.img-small {
+    width: 8rem;
+}
+
+.img-medium {
+    width: 12rem;
+}
+
+.img-large {
+    width: 16rem;
+}
+
+.img-middle {
+    margin: 0 auto;
+}
+
+.img-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
