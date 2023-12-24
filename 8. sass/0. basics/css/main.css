@@ -33,13 +33,13 @@ body {
   background-color: yellowgreen;
   color: blue;
 }
-.card .card__img {
+.card__img {
   width: 100%;
 }
-.card .card__heading {
+.card__heading {
   text-align: center;
 }
-.card .card__content {
+.card__content {
   text-align: center;
   font-size: 0.8rem;
 }

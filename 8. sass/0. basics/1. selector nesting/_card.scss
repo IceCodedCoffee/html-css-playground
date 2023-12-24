@@ -10,15 +10,15 @@
 
     color: $color-primary;
 
-    .card__img {
+    &__img {
         width: 100%;
     }
 
-    .card__heading {
+    &__heading {
         text-align: center;
     }
 
-    .card__content {
+    &__content {
         text-align: center;
         font-size: 0.8rem;
     }
