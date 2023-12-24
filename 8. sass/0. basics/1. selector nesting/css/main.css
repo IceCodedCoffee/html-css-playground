@@ -17,6 +17,9 @@
   color: green;
   text-align: center;
 }
+.card-container .card__img {
+  width: 100%;
+}
 .card-container .specialcard {
   width: 250px;
   height: 250px;
