@@ -11,17 +11,19 @@
 
         color: black;
         text-align: center;
+
+        &.specialcard {
+            background-color: rgb(126, 33, 14);
+
+            color: green;
+            text-align: center;
+        }
     }
 
-    .card1 {
-        font-size: 0.875rem
-    }
-
-    .card2 {
-        font-size: 1.125rem
-    }
-
-    .card3 {
-        font-size: 1.25rem
+    .specialcard {
+        width: 250px;
+        height: 250px;
+        margin: 1rem;
+        border: 2px solid black;
     }
 }

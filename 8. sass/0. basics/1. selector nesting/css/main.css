@@ -12,12 +12,14 @@
   color: black;
   text-align: center;
 }
-.card-container .card1 {
-  font-size: 0.875rem;
+.card-container .card.specialcard {
+  background-color: rgb(126, 33, 14);
+  color: green;
+  text-align: center;
 }
-.card-container .card2 {
-  font-size: 1.125rem;
-}
-.card-container .card3 {
-  font-size: 1.25rem;
+.card-container .specialcard {
+  width: 250px;
+  height: 250px;
+  margin: 1rem;
+  border: 2px solid black;
 }
