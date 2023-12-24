@@ -1,8 +1,8 @@
-.div-container {
+.card-container {
     display: flex;
     flex-flow: row wrap;
 
-    div {
+    .card {
         width: 200px;
         height: 150px;
         margin: 2rem;
@@ -13,15 +13,15 @@
         text-align: center;
     }
 
-    .div1 {
+    .card1 {
         font-size: 0.875rem
     }
 
-    .div2 {
+    .card2 {
         font-size: 1.125rem
     }
 
-    .div3 {
+    .card3 {
         font-size: 1.25rem
     }
 }
