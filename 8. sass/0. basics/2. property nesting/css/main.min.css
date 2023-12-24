@@ -1,0 +1,1 @@
+@import'/normalize.css';.div-container{display:flex;flex-flow:row wrap}div{width:200px;height:150px;margin:2rem;border:1px solid #000;background-color:#a661b8;color:#000;text-align:center}.div1{font-size:.875rem}.div2{font-size:1.125rem}.div3{font-size:1.25rem}

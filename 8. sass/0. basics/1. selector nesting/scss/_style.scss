@@ -1,27 +1,27 @@
 .div-container {
     display: flex;
     flex-flow: row wrap;
-}
 
-div {
-    width: 200px;
-    height: 150px;
-    margin: 2rem;
-    border: 1px solid black;
-    background-color: rgb(166, 97, 184);
+    div {
+        width: 200px;
+        height: 150px;
+        margin: 2rem;
+        border: 1px solid black;
+        background-color: rgb(166, 97, 184);
 
-    color: black;
-    text-align: center;
-}
+        color: black;
+        text-align: center;
+    }
 
-.div1 {
-    font-size: 0.875rem
-}
+    .div1 {
+        font-size: 0.875rem
+    }
 
-.div2 {
-    font-size: 1.125rem
-}
+    .div2 {
+        font-size: 1.125rem
+    }
 
-.div3 {
-    font-size: 1.25rem
+    .div3 {
+        font-size: 1.25rem
+    }
 }
