@@ -34,18 +34,15 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: yellowgreen;
-  color: #5f5f5f;
+  color: blue;
 }
-
-.card__img {
+.card .card__img {
   width: 100%;
 }
-
-.card__heading {
+.card .card__heading {
   text-align: center;
 }
-
-.card__content {
+.card .card__content {
   text-align: center;
   font-size: 0.8rem;
 }

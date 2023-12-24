@@ -9,17 +9,17 @@
     background-color: yellowgreen;
 
     color: $color-primary;
-}
 
-.card__img {
-    width: 100%;
-}
+    .card__img {
+        width: 100%;
+    }
 
-.card__heading {
-    text-align: center;
-}
+    .card__heading {
+        text-align: center;
+    }
 
-.card__content {
-    text-align: center;
-    font-size: 0.8rem;
+    .card__content {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }
