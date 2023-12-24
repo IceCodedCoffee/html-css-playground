@@ -1,12 +1,8 @@
-$font-primary: 'Impact';
-$color-primary: blue;
-$color-secondary: red;
-
-@mixin shared-style($color, $font-family) {
+@mixin shared-style {
     font-size: 1.125rem;
     font-weight: bold;
-    font-family: $font-family;
-    color: $color;
+    font-family: 'Arial';
+    color: gray;
 }
 
 .card-container {
@@ -14,7 +10,7 @@ $color-secondary: red;
     flex-flow: row wrap;
 
     .card {
-        @include shared-style($color-primary, $font-primary);
+        @include shared-style;
 
         width: 200px;
         height: 150px;
@@ -44,7 +40,7 @@ $color-secondary: red;
     }
 
     .specialcard {
-        @include shared-style($color-primary, $font-primary);
+        @include shared-style;
 
         width: 250px;
         height: 250px;
