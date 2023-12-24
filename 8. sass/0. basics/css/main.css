@@ -12,17 +12,14 @@ body {
 .card {
   transition: all 0.5s ease;
 }
-
-.card-1 {
+.card.card-1 {
   font-family: "Roboto";
 }
-
-.card-2 {
+.card.card-2 {
   font-family: "Roboto";
   font-style: italic;
 }
-
-.card-3 {
+.card.card-3 {
   font-family: "Roboto";
   font-weight: bold;
 }
