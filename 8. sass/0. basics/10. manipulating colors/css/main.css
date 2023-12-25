@@ -1,0 +1,19 @@
+@import '/normalize.css';
+.btn-container .btn {
+  margin: 1em;
+  padding: 2em 4em;
+  border-radius: 4px;
+  border: 1px solid black;
+  background: #3196cb;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.btn-container .btn:hover {
+  background: #1d7bac;
+}
