@@ -1,0 +1,79 @@
+@import '/normalize.css';
+form {
+  max-width: 37.5rem;
+  margin: 2rem auto;
+}
+
+.form__row, .form__row-radio, .form__row-checkbox {
+  margin: 0 0 0.7rem 0;
+}
+
+.form__row-radio, .form__row-checkbox {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+@media (min-width: 37.5rem) {
+  label {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    min-width: 6rem;
+  }
+}
+
+.label__checkbox {
+  display: inline;
+}
+
+.input-radio, .label-radio {
+  display: inline-block;
+}
+
+.label-radio {
+  margin-right: 1rem;
+}
+
+@media (min-width: 37.5rem) {
+  .label-textarea {
+    vertical-align: top;
+  }
+}
+
+input, textarea {
+  width: 20rem;
+}
+
+input {
+  padding: 0.7rem;
+}
+
+textarea {
+  padding: 0.1em;
+}
+
+input[type=checkbox], input[type=radio] {
+  width: unset;
+}
+
+@media (min-width: 37.5rem) {
+  input[type=checkbox], input[type=submit], p {
+    margin-left: 6.25rem;
+  }
+}
+
+.label__link {
+  margin: 1.125rem;
+  text-decoration: none;
+}
+@media (min-width: 24.8125rem) {
+  .label__link {
+    margin: unset;
+  }
+}
+
+input[type=submit], input[type=reset] {
+  max-width: 8.875em;
+}

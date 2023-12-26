@@ -1,0 +1,85 @@
+$desktop: 37.5rem;
+
+@mixin breakpoint($screen-width) {
+    @media (min-width: $screen-width){
+        @content;
+    }
+}
+
+form {
+    max-width: 37.5rem;
+    margin: 2rem auto;
+}
+
+.form__row,.form__row-radio, .form__row-checkbox {
+    margin: 0 0 0.7rem 0;
+}
+
+.form__row-radio, .form__row-checkbox {
+    margin-top:1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2rem;
+
+    @include breakpoint($desktop) {
+        display: inline-block;
+        margin-bottom: 0.6rem;
+        min-width: 6rem;
+    }
+}
+
+.label__checkbox {
+    display: inline;
+}
+
+.input-radio, .label-radio  {
+    display: inline-block;
+}
+
+.label-radio {
+    margin-right: 1rem;
+}
+
+.label-textarea {
+    @include breakpoint($desktop){
+        vertical-align: top;
+    }
+}
+
+input, textarea {
+    width: 20rem;
+}
+
+input {
+    padding : 0.7rem;
+}
+
+textarea {
+    padding: 0.1em;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    width: unset;
+}
+
+input[type="checkbox"], input[type="submit"], p {
+    @include breakpoint($desktop){
+        margin-left: 6.25rem;
+    }
+}
+
+.label__link {
+    margin:1.125rem;
+
+    text-decoration: none;
+
+    @include breakpoint(24.8125rem) {
+        margin: unset;
+    }
+}
+
+input[type="submit"], input[type="reset"] {
+    max-width: 8.875em;
+}
