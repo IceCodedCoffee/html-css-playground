@@ -1,4 +1,4 @@
-$desktop: 30rem;
+$desktop: 30.5rem;
 
 @mixin breakpoint($screen-width) {
     @media (min-width: $screen-width){
@@ -16,7 +16,7 @@ form {
 }
 
 .row-radio, .row-checkbox {
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0.7rem 0;
 }
 
 label {
@@ -30,11 +30,7 @@ label {
     }
 }
 
-.label-checkbox {
-    display: inline;
-}
-
-.input-radio, .label-radio  {
+.label-radio, .input-radio  {
     display: inline-block;
 }
 
@@ -48,12 +44,8 @@ label {
     }
 }
 
-input, textarea {
-    width: 100%;
-
-    @include breakpoint($desktop) {
-        width: 74%;
-    }
+.label-checkbox {
+    display: inline;
 }
 
 input {
@@ -62,6 +54,14 @@ input {
 
 textarea {
     padding: 0.1em;
+}
+
+input, textarea {
+    width: 100%;
+
+    @include breakpoint($desktop) {
+        width: 74%;
+    }
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -74,8 +74,12 @@ input[type="checkbox"], input[type="submit"], p {
     }
 }
 
+input[type="submit"], input[type="reset"] {
+    max-width: 8.5em;
+}
+
 .label-link {
-    margin: 1.125rem;
+    margin: 0 0 0 1.125rem;
 
     text-decoration: none;
     color: #000;
@@ -83,8 +87,4 @@ input[type="checkbox"], input[type="submit"], p {
     @include breakpoint(24.8125rem) {
         margin: unset;
     }
-}
-
-input[type="submit"], input[type="reset"] {
-    max-width: 8.875em;
 }

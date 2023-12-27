@@ -9,14 +9,14 @@ form {
 }
 
 .row-radio, .row-checkbox {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0.7rem 0;
 }
 
 label {
   display: block;
   margin: 0 0 0.4rem 0;
 }
-@media (min-width: 30rem) {
+@media (min-width: 30.5rem) {
   label {
     display: inline-block;
     margin: 0 0 0.6rem 0;
@@ -24,11 +24,7 @@ label {
   }
 }
 
-.label-checkbox {
-  display: inline;
-}
-
-.input-radio, .label-radio {
+.label-radio, .input-radio {
   display: inline-block;
 }
 
@@ -36,19 +32,14 @@ label {
   margin: 0 1rem 0 0;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 30.5rem) {
   .label-textarea {
     vertical-align: top;
   }
 }
 
-input, textarea {
-  width: 100%;
-}
-@media (min-width: 30rem) {
-  input, textarea {
-    width: 74%;
-  }
+.label-checkbox {
+  display: inline;
 }
 
 input {
@@ -59,18 +50,31 @@ textarea {
   padding: 0.1em;
 }
 
+input, textarea {
+  width: 100%;
+}
+@media (min-width: 30.5rem) {
+  input, textarea {
+    width: 74%;
+  }
+}
+
 input[type=checkbox], input[type=radio] {
   width: unset;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 30.5rem) {
   input[type=checkbox], input[type=submit], p {
     margin: 0 0 0 26%;
   }
 }
 
+input[type=submit], input[type=reset] {
+  max-width: 8.5em;
+}
+
 .label-link {
-  margin: 1.125rem;
+  margin: 0 0 0 1.125rem;
   text-decoration: none;
   color: #000;
 }
@@ -78,8 +82,4 @@ input[type=checkbox], input[type=radio] {
   .label-link {
     margin: unset;
   }
-}
-
-input[type=submit], input[type=reset] {
-  max-width: 8.875em;
 }

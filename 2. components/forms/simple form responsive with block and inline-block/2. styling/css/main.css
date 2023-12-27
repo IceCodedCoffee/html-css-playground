@@ -1,4 +1,8 @@
 @import '/normalize.css';
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 form {
   max-width: 35rem;
   margin: 2rem auto;
@@ -16,7 +20,7 @@ fieldset {
 }
 
 .row-radio, .row-checkbox {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0.7rem 0;
 }
 
 label {
@@ -31,11 +35,7 @@ label {
   }
 }
 
-.label-checkbox {
-  display: inline;
-}
-
-.input-radio, .label-radio {
+.label-radio, .input-radio {
   display: inline-block;
 }
 
@@ -54,13 +54,8 @@ label {
   }
 }
 
-input, textarea {
-  width: 100%;
-}
-@media (min-width: 30.5rem) {
-  input, textarea {
-    width: 74%;
-  }
+.label-checkbox {
+  display: inline;
 }
 
 input {
@@ -69,6 +64,15 @@ input {
 
 textarea {
   padding: 0.1em;
+}
+
+input, textarea {
+  width: 100%;
+}
+@media (min-width: 30.5rem) {
+  input, textarea {
+    width: 74%;
+  }
 }
 
 input[type=checkbox], input[type=radio] {
@@ -81,22 +85,11 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
-.label-link {
-  margin: 1.125rem;
-  text-decoration: none;
-  color: #000;
-}
-@media (min-width: 24.8125rem) {
-  .label-link {
-    margin: unset;
-  }
-}
-
 input[type=submit], input[type=reset] {
-  max-width: 8.875em;
+  max-width: 8.5em;
 }
 
-input:hover, textarea:hover, input[type=radio]:hover, input[type=checkbox]:hover, input[type=submit]:hover {
+input:hover, textarea:hover {
   background: #fffff0;
   border: 2px solid #efe816;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -113,4 +106,15 @@ input[type=submit]:hover, input[type=reset]:hover {
 
 input[type=submit]:active, input[type=reset]:active {
   background: #8f8f8f;
+}
+
+.label-link {
+  margin: 1.125rem;
+  text-decoration: none;
+  color: #000;
+}
+@media (min-width: 24.8125rem) {
+  .label-link {
+    margin: unset;
+  }
 }
