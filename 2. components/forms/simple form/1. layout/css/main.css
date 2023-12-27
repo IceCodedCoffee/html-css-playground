@@ -1,6 +1,6 @@
 @import '/normalize.css';
 form {
-  max-width: 37.5rem;
+  max-width: 35rem;
   margin: 2rem auto;
 }
 
@@ -16,6 +16,13 @@ label {
   display: block;
   margin-bottom: 0.4rem;
 }
+@media (min-width: 30rem) {
+  label {
+    display: inline-block;
+    margin-bottom: 0.6rem;
+    min-width: 25%;
+  }
+}
 
 .label-checkbox {
   display: inline;
@@ -29,8 +36,19 @@ label {
   margin-right: 1rem;
 }
 
+@media (min-width: 30rem) {
+  .label-textarea {
+    vertical-align: top;
+  }
+}
+
 input, textarea {
   width: 100%;
+}
+@media (min-width: 30rem) {
+  input, textarea {
+    width: 74%;
+  }
 }
 
 input {
@@ -45,9 +63,21 @@ input[type=checkbox], input[type=radio] {
   width: unset;
 }
 
+@media (min-width: 30rem) {
+  input[type=checkbox], input[type=submit], p {
+    margin-left: 26%;
+  }
+}
+
 .label-link {
   margin: 1.125rem;
   text-decoration: none;
+  color: #000;
+}
+@media (min-width: 24.8125rem) {
+  .label-link {
+    margin: unset;
+  }
 }
 
 input[type=submit], input[type=reset] {

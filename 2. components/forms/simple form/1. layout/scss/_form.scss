@@ -1,5 +1,13 @@
+$desktop: 30rem;
+
+@mixin breakpoint($screen-width) {
+    @media (min-width: $screen-width){
+        @content;
+    }
+}
+
 form {
-    max-width: 37.5rem;
+    max-width: 35rem;
     margin: 2rem auto;
 }
 
@@ -14,6 +22,12 @@ form {
 label {
     display: block;
     margin-bottom: 0.4rem;
+
+    @include breakpoint($desktop) {
+        display: inline-block;
+        margin-bottom: 0.6rem;
+        min-width: 25%;
+    }
 }
 
 .label-checkbox {
@@ -28,8 +42,18 @@ label {
     margin-right: 1rem;
 }
 
+.label-textarea {
+    @include breakpoint($desktop){
+        vertical-align: top;
+    }
+}
+
 input, textarea {
     width: 100%;
+
+    @include breakpoint($desktop) {
+        width: 74%;
+    }
 }
 
 input {
@@ -44,10 +68,21 @@ input[type="checkbox"], input[type="radio"] {
     width: unset;
 }
 
+input[type="checkbox"], input[type="submit"], p {
+    @include breakpoint($desktop){
+        margin-left: 26%;
+    }
+}
+
 .label-link {
     margin: 1.125rem;
 
     text-decoration: none;
+    color: #000;
+
+    @include breakpoint(24.8125rem) {
+        margin: unset;
+    }
 }
 
 input[type="submit"], input[type="reset"] {
