@@ -11,7 +11,7 @@ fieldset {
   background: rgb(240, 240, 240);
 }
 
-.row, .row-radio, .row-checkbox {
+.row {
   margin: 0 0 0.7rem 0;
 }
 
