@@ -23,16 +23,16 @@ fieldset {
 }
 
 .row-radio, .row-checkbox {
-    margin-top:1rem;
+    margin: 1rem 0 0 0;
 }
 
 label {
     display: block;
-    margin-bottom: 0.4rem;
+    margin: 0 0 0.4rem 0;
 
     @include breakpoint($desktop) {
         display: inline-block;
-        margin-bottom: 0.6rem;
+        margin: 0 0 0.6rem 0;
         min-width: 25%;
     }
 }
@@ -46,7 +46,7 @@ label {
 }
 
 .label-radio {
-    margin-right: 1rem;
+    margin: 0 1rem 0 0;
 
     @include breakpoint($desktop){
         min-width: unset;
