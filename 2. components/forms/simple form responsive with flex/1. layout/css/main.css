@@ -1,30 +1,36 @@
 @import '/normalize.css';
 /*mobile*/
-form {
-  max-width: 35rem;
-  margin: 2rem auto;
-}
-
+/* rows */
 .row {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   margin: 0 0 0.7rem 0;
 }
 
 .row-radio {
   flex-direction: column;
   align-items: flex-start;
-  margin: 1.2rem 0 0.1rem 0;
 }
 
-label, .label-radio, .label-checkbox {
-  margin: 0 0.2rem 0.4rem 0;
+.row-radio, .row-checkbox {
+  margin: 1.2rem 0 0.7rem 0;
+}
+
+/* labels */
+label {
+  margin: 0 0 0.4rem 0;
+}
+
+.label-checkbox {
+  margin: 0;
 }
 
 .label-radio {
-  margin: 0 0.3rem 0.4rem 0;
+  margin: 0 1rem 0 0;
 }
 
+/* inputs */
 input {
   padding: 0.7rem;
 }
@@ -38,7 +44,7 @@ input, textarea {
 }
 
 .input-radio, input[type=checkbox] {
-  margin: 0 0.2rem 0.4rem 0;
+  margin: 0 0.2rem 0 0;
 }
 
 input[type=checkbox], input[type=radio] {
@@ -50,6 +56,7 @@ input[type=submit], input[type=reset] {
   max-width: 8.5em;
 }
 
+/* other */
 .label-link {
   margin: 0 0 0 1.125rem;
   text-decoration: none;
@@ -61,18 +68,23 @@ input[type=submit], input[type=reset] {
   }
 }
 
+/* desktop */
 @media (min-width: 30.5rem) {
+  form {
+    max-width: 35rem;
+    margin: 2rem auto;
+  }
+  /* rows */
   .row {
     flex-wrap: nowrap;
   }
   .row-radio {
     flex-direction: row;
   }
-  .row-radio, .row-checkbox {
-    margin: 1rem 0 0.7rem 0;
-  }
+  /* labels */
   label {
-    min-width: 20%;
+    margin: 0;
+    min-width: 22%;
   }
   .label-textarea {
     align-self: flex-start;
@@ -80,13 +92,11 @@ input[type=submit], input[type=reset] {
   .label-checkbox {
     margin: 0 0.2rem 0 0;
   }
-  input {
-    margin: 0 0 0.6rem 0;
+  /* inputs */
+  input[type=checkbox] {
+    margin: 0 0.2rem 0 22%;
   }
-  input[type=checkbox], input[type=submit], p {
-    margin: 0 0.2rem 0 20%;
-  }
-  input[type=submit] {
-    margin: 0 0.5rem 0 20%;
+  input[type=submit], p {
+    margin: 0 0.5rem 0 22%;
   }
 }
