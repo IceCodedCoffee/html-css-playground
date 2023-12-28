@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple form</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <form id="myForm" method="post">
+        <fieldset>
+
+            <div class="row">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Ihr Name">
+            </div>
+
+            <div class="row">
+                <label for="vname">Vorname:</label>
+                <input type="text" name="vname" id="vname" placeholder="Ihr Vorname">
+            </div>
+
+            <div class="row">
+                <label for="mail">E-Mail: *</label>
+                <input type="email" name="mail" id="mail" placeholder="E-Mail-Adresse" required>
+            </div>
+
+            <div class="row">
+                <label for="geboren">Geburtsjahr:</label>
+                <input type="number" name="geboren" id="geboren" min="1920" max="2023" value="1990">
+            </div>
+
+            <div class="row row-radio">
+                <label>Geschlecht:</label>
+
+                <div class="row row-geschlecht">
+                    <input type="radio" name="geschlecht" id="male" value="male" class="input-radio">
+                    <label for="male" class="label-radio">Männlich</label>
+
+                    <input type="radio" name="geschlecht" id="female" value="female" class="input-radio">
+                    <label for="female" class="label-radio">Weiblich</label>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <label for="nachricht" class="label-textarea">Ihre Nachricht:</label>
+                <textarea name="nachricht" id="nachricht" placeholder="Hier Nachricht eingeben..." rows="8" required></textarea>
+            </div>
+
+            <div class="row row-checkbox">
+                <input type="checkbox" name="reply" id="reply" value="reply">
+                <label for="reply" class="label-checkbox">
+                    DSGVO-Einverständnis
+                </label>
+                <a href="#" class="label-link">(<u>Datenschutzerklärung</u>)</a>
+            </div>
+
+            <div class="row">
+                <input name="absenden" type="submit" value="Absenden">
+                <input name="Reset" type="reset" value="Zurücksetzen">
+            </div>
+
+            <p>(*) = Eingabe erforderlich</p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
